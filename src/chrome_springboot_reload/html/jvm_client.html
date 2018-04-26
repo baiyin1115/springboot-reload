@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>JVM热加载客户端</title>
+</head>
+<body>
+有疑问企业微信联系 宋健</a>
+
+<p>
+    项目域名：<input id="host" witdh="200px;" value="http://127.0.0.1:8080"/> <br/>
+    类名(全路径),例如：springboot.reload.example.service.impl.HelloServiceImpl
+    <input type="text" id="reloadClassName" style="width:300px" value="springboot.reload.example.service.impl.HelloServiceImpl"/> <br/>
+    jar文件: <input id="uploadFile" type="file" name="uploadFile" style="width:211px;"/> <br/>
+    后端实例个数: <input id="reloadServerNumber" style="width:30px" value="1"/> <br/>
+    <input id="upload" type="button" value="上传"/>
+</p>
+
+<p>
+你要查找的类(全路径):<input id="className" witdh="200px;"/><br/>
+<input id="query" type="button" value="查询"/>
+</p>
+
+<div id="last_doc"></div>
+<script src="../scripts/jquery-1.12.3.min.js"></script>
+<script src="../scripts/ajaxfileupload.js"></script>
+<script src="../scripts/app.js"></script>
+</body>
+</html>
