@@ -9,9 +9,9 @@ public class HelloServiceImpl implements HelloService {
 
 	@Override
 	public String hello(String msg) {
-//		return String.format("版本 1111111111 : %s", msg);
+		return String.format("版本 1111111111 : %s", msg);
 //		return String.format("版本 2222222222: %s", msg);
-		return String.format("版本 333333333: %s", msg);
+//		return String.format("版本 333333333: %s", msg);
 	}
 
 }

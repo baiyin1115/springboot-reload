@@ -21,7 +21,7 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.multipart.MultipartHttpServletRequest;
 
 import springboot.reload.plugin.core.ClassReloader;
-import springboot.reload.plugin.core.SpringClassLoader;
+import springboot.reload.plugin.core.SpringBootClassLoader;
 import springboot.reload.plugin.model.OnlineReloadProperties;
 import springboot.reload.plugin.model.ReloadResponse;
 import springboot.reload.plugin.support.ReloadHistoryService;
@@ -39,7 +39,7 @@ public class OnlineReloadEndpoint {
 	private ClassReloader classReloader;
 
 	@Autowired
-	private SpringClassLoader springClassLoader;
+	private SpringBootClassLoader springClassLoader;
 	
 	@Autowired
 	private ReloadHistoryService reloadHistoryService;

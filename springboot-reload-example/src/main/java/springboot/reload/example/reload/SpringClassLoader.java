@@ -1,11 +1,12 @@
-package springboot.reload.plugin.core;
+package springboot.reload.example.reload;
 
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.stereotype.Component;
 
 @Component
-public class SpringClassLoader extends AnnotationConfigApplicationContext{
- 
+public class SpringClassLoader extends AnnotationConfigApplicationContext implements springboot.reload.plugin.core.SpringBootClassLoader{
+
+	@Override
 	public ClassLoader getMyClassLoader() {
 		return super.getClassLoader();
 	}
